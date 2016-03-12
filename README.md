@@ -6,7 +6,9 @@
 ## Note
 
 On my mac ( El Capitan ), I still got an error :
+
 9:31: execution error: Can’t get application "Apple_Terminal". (-1728)
+
 After a little googling I found out it is because of env variable $TERM_PROGRAM so I made a little change and now it is working like a charm.
 
 ## Setup
