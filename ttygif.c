@@ -285,7 +285,7 @@ main (int argc, char **argv)
     options.skip_limit = 5;
     options.skip_threshold = 0;
     options.window_id = getenv("WINDOWID");
-    options.terminal_app = getenv("TERM_PROGRAM");
+    options.terminal_app = "Terminal.app"; //getenv("TERM");
     options.out_file = "tty.gif";
 
     char dir_template[] = "/tmp/ttygif.XXXXXX";

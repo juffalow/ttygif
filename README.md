@@ -3,26 +3,13 @@
 > ttygif converts a ttyrec file into gif files.
 > It's a stripped down version of ttyplay that captures every frame.
 
+## Note
+
+On my mac ( El Capitan ), I still got an error :
+9:31: execution error: Can’t get application "Apple_Terminal". (-1728)
+After a little googling I found out it is because of env variable $TERM_PROGRAM so I made a little change and now it is working like a charm.
+
 ## Setup
-
-### Debian/Ubuntu
-``` sh
-$ sudo apt-get install imagemagick ttyrec gcc
-$ git clone https://github.com/icholy/ttygif.git
-$ cd ttygif
-$ make
-$ sudo make install
-```
-
-### Fedora/Redhat
-``` sh
-$ sudo yum install ImageMagick gcc
-$ # install ttyrec from source ~> https://github.com/mjording/ttyrec
-$ git clone https://github.com/icholy/ttygif.git
-$ cd ttygif
-$ make
-$ sudo make install
-```
 
 ### OSX
 ``` sh
